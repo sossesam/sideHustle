@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+  text-decoration: none;
+  color: var(--neutral-white);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--primary-dark-blue-2);
+  font-size: var(--body-font-size);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family-body);
+}
+
+:root {
+  --primary-dark-blue-1: hsl(217, 28%, 15%);
+  --primary-dark-blue-2: hsl(218, 28%, 13%);
+  --primary-dark-blue-3: hsl(216, 53%, 9%);
+  --primary-dark-blue-4: hsl(219, 30%, 18%);
+  --accent-cyan: hsl(176, 68%, 64%);
+  --accent-blue: hsl(198, 60%, 50%);
+  --accent-light-red: hsl(0, 100%, 63%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --body-font-size: 1.4rem;
+  --font-family-heading: "Raleway", sans-serif;
+  --font-family-body: "Open Sans", sans-serif;
+  --weight-light: 400;
+  --weight-bold: 700;
+  --screen-desktop: 1440px;
+  --screen-mobile: 375px;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-color: var(--primary-dark-blue-1);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 155% 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family-heading);
+}
+
+.head {
+  width: 100%;
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 8rem;
+}
+
+nav > * {
+  margin: 0.7rem;
+}
+
+nav a:hover {
+  color: var(--accent-blue);
+}
+
+.imgs > img {
+  width: 80%;
+  object-position: center;
+}
+
+header section {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  line-height: 1.5;
+  width: 450px;
+  margin: 20px auto;
+}
+
+header section .contents h2 {
+  font-weight: var(--weight-bold);
+}
+
+header section .contents article {
+  width: 35vw;
+  margin: 30px auto 0 auto;
+}
+
+header section .contents button {
+  background: linear-gradient(180deg, var(--accent-blue), var(--accent-cyan));
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  padding: 1.3rem 2.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  width: 50%;
+  margin-top: 50px;
+}
+
+section.services {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  font-family: var(--font-family-heading);
+  line-height: 1.5;
+}
+
+section .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  max-width: 35rem;
+}
+
+section .service .contents h2 {
+  font-size: 1.7rem;
+}
+
+section .service .icon {
+  margin-bottom: 1.3rem;
+  width: 6rem;
+}
+
+section.productive {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  font-family: var(--font-family-heading);
+  line-height: 1.5;
+}
+
+.productive {
+  width: 80vh;
+  margin-top: 150px;
+}
+.productive .contents {
+  margin-right: 5px;
+  margin: 20px;
+}
+
+.pro > img {
+  width: 70%;
+  margin-left: 100px;
+}
+.productive .contents h2 {
+  width: 15vw;
+}
+
+.productive .contents .content {
+  width: 35vw;
+}
+.content p {
+  margin-top: 20px;
+}
+
+section.teams {
+  margin: 10px auto;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  font-family: var(--font-family-heading);
+  line-height: 1.4;
+}
+section .team {
+  background-color: var(--primary-dark-blue-4);
+  border-radius: 5px;
+  padding: 60px;
+  width: 30vw;
+  height: auto;
+  margin-left: 5px;
+}
+
+.tea > images {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+section .team p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+section .team .portfolio {
+  display: flex;
+  align-items: center;
+}
+section .team .portfolio .details span {
+  font-size: 1rem;
+}
+
+section .team .portfolio .details {
+  margin-left: 1.2rem;
+}
+
+.image > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+section.access {
+  width: 60vw;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: -12rem;
+  background-color: var(--primary-dark-blue-1);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+  position: relative;
+  line-height: 1.5;
+}
+
+.access p {
+  padding: 0 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+input[type="email"] {
+  width: 65%;
+  margin-bottom: 1.5rem;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+}
+
+form > button {
+  margin-left: 20px;
+}
+
+button,
+a.btn {
+  outline: none;
+  border: none;
+  padding: 1.3rem 2.5rem;
+  cursor: pointer;
+  background: linear-gradient(180deg, var(--accent-blue), var(--accent-cyan));
+  border-radius: 5rem;
+  width: 220px;
+}
+
+footer {
+  z-index: 1;
+  background-color: var(--primary-dark-blue-3);
+  padding-top: 20rem;
+  padding-bottom: 3rem;
+}
+
+.fuimg > img {
+  padding-left: 50px;
+  width: 10%;
+  margin-bottom: 50px;
+}
+
+footer > .info {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-items: center;
+  width: 100vw;
+}
+
+.info > .location {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  gap: 10px;
+  margin: 0 3vw;
+  line-height: 2rem;
+}
+
+.info > .contact {
+  margin: 0 3vw;
+  line-height: 3rem;
+}
+.contact > .phone,
+.mail {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.info > .More {
+  margin: 0 3vw;
+  line-height: 4rem;
+}
+
+.info > .policies {
+  margin: 0 3vw;
+  line-height: 4rem;
+}
+
+info > .social {
+  display: flex;
+  flex-direction: row;
+  margin: 0 3vw;
+  gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  header section .contents article {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  section.services {
+    
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    font-family: var(--font-family-heading);
+    line-height: 1.5;
+  }
+
+  section.productive {
+    display: block;
+    width: 100%;
+  }
+
+  
+
+ 
+  
+  
+}
